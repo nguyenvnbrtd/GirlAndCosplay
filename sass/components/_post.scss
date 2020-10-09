@@ -1,0 +1,81 @@
+.post{
+    position: relative;
+    margin-bottom: 2rem;
+    height: 7rem;
+
+    &__author{
+        position: relative;
+        display: inline-block;
+        width: 5rem;
+        height: 5rem;
+        margin-right: 2rem;
+        border-radius: 50%;
+        box-shadow: 0 0 1rem;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__heading{
+        position: absolute;
+        display: inline-block;
+        height: 3rem;
+        overflow: hidden;
+        
+        & a{
+            color: $color-dark;
+            text-decoration: none;
+        }
+    }
+
+    &__tag{
+        position: absolute;
+        top: 2.5rem;
+        display: inline-block;
+    }
+
+    &--1{
+        & .post__author{
+            background-image: url('../img/author-1.jpg');
+        }
+        & .tag__color{
+            background-color: $question;
+        }
+    }
+    &--2{
+        & .post__author{
+            background-image: url('../img/author-2.jpg');
+        }
+        & .tag__color{
+            background-color: $find-album;
+        }
+    }
+    &--3{
+        & .post__author{
+            background-image: url('../img/author-3.jpg');
+        }
+        & .tag__color{
+            background-color: $find-model;
+        }
+    }
+    &--4{
+        & .post__author{
+            background-image: url('../img/author-4.jpg');
+        }
+        & .tag__color{
+            background-color: $for-fun;
+        }
+    }
+}
+
+.tag{
+    &__color{
+        position: absolute;
+        top: 0.2rem;
+        left: 4rem;
+        display: inline-block;
+        width: 10rem;
+        height: 2.5rem;
+        border-radius: 2rem;
+        box-shadow: 0 0 1rem;
+    }
+}

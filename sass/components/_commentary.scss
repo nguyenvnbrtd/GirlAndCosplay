@@ -1,0 +1,169 @@
+.commentary {
+    position: relative;
+    width: 65%;
+    margin: 0 auto;
+
+    &__avatar{
+        position: absolute !important;
+        top: 2rem !important;
+        left: 1rem;
+        background-image: url("../img/author-2.jpg");
+    }
+
+    &__input{
+        position: relative;
+        display: inline-block;
+        max-height: fit-content;
+        width: 100%;
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+        padding: 1rem;
+        padding-bottom: 9rem;
+        box-shadow: 0 0 1rem;
+    }
+
+    &__submit{
+        position: absolute;
+        right: 10%;
+        bottom: 1rem;
+    }
+
+    &__container{
+        position: relative;
+        margin-bottom: 2rem;
+        box-shadow: 0 0 0.5rem;
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+
+    &__author{
+        position: relative;
+        height: 3rem;
+    }
+
+    &__content{
+        position: relative;
+        left: 7rem;
+        top: 0.5rem;
+        width: 50rem;
+        max-width: 80%;
+        margin-bottom: 1rem;
+
+        & p{
+            border-bottom: 1px solid;
+        }
+    }
+
+    &__react{
+        position: relative;
+        left: 7rem;
+        display: inline-block;
+    }
+
+    &__time{
+        position: relative;
+        left: 6rem;
+        display: inline-block;
+    }
+
+    &__more{
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+
+        & a{
+            text-decoration: none;
+            color: $color-dark;
+            display: inline-block;
+            transition: all 0.3s;
+
+            &:hover{
+                color: $color-blue;
+                transform: scale(1.1,1.1);
+            }
+            &:active{
+                transform: scale(1,1);
+            }
+        }
+    }
+
+    
+
+}
+
+.author{
+    position: absolute;
+
+    &__avatar{
+        position: relative;
+        top: 1rem;
+        display: inline-block;
+        width: 5rem;
+        height: 5rem;
+        margin-right: 2rem;
+        box-shadow: 0 0 1rem;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+    }
+    &__name{
+        position: absolute;
+        left: 7rem;
+        top: 1rem;
+    }
+    &--1{
+        & .author__avatar{
+            background-image: url("../img/author-1.jpg");
+        }
+    }
+    &--2{
+        & .author__avatar{
+            background-image: url("../img/author-2.jpg");
+        }
+    }
+    &--3{
+        & .author__avatar{
+            background-image: url("../img/author-3.jpg");
+        }
+    }
+    &--4{
+        & .author__avatar{
+            background-image: url("../img/author-4.jpg");
+        }
+    }
+
+    & a{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: $color-dark;
+    }
+}
+
+.react{
+    position: relative;
+    display: inline-block;
+    margin-right: 2rem;
+
+    & a{
+        text-decoration: none;
+        color: $color-dark;
+        display: inline-block;
+        transition: all 0.2s;
+
+        &:hover{
+            transform: scale(1.1,1.1);
+            color: $color-blue;
+        }
+
+        &:active{
+            transform: scale(1,1);
+        }
+    }
+
+    &__number{
+        display: inline-block;
+        margin-left: 0.5rem;
+    }
+}

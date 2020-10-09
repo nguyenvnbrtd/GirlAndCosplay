@@ -1,0 +1,78 @@
+
+.picture{
+    position: relative;
+    margin: 0 2rem;
+    margin-bottom: 5rem;
+
+    &__number{
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+    }
+    &__discription{
+        position: relative;
+        width: 35%;
+        height: 31rem;
+        margin: 0 auto;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 0 1rem;
+        border-radius: 2rem;
+        padding: 2rem 0;
+        background-color: $color-white;
+
+        & .add__radio{
+            position: relative;
+            width: fit-content;
+            margin: 0 auto;
+        }
+    }
+    &__main{
+        position: relative;
+        display: inline-block;
+        width: 78%;
+        padding-bottom: 2rem;
+        box-shadow: 0 0 1rem;
+        border-radius: 1rem;
+        background-color: $color-white;
+        
+    }
+    &__sub{
+        position: absolute;
+        right: 0;
+        display: inline-block;
+        width: 20%;
+
+        & .item--normal{
+            margin-bottom: 2rem;
+        }
+    }
+    &__name{
+        padding: 2rem 0;
+        width: 85%;
+        margin: 0 auto;
+        font-size: 2rem;
+        box-shadow: 0 1px 0 0 $color-dark;
+    }
+    &__text{
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+
+        & a{
+            text-decoration: none;
+            color: $color-dark;
+        }
+    }
+
+    
+}
+
+.commentary{
+    position: relative;
+    width: 90%;
+    margin: 5rem auto;
+}

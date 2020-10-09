@@ -1,0 +1,23 @@
+.scrollTop{
+    position: relative;
+
+    &__icon{
+        position: absolute;
+        right: -13rem;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        background-image: url(../img/scroll-top-icon.png);
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1, 1);
+        }
+        &:active{
+            transform: scale(0.9,0.9);
+        }
+        
+    }
+}

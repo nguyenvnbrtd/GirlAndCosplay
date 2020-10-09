@@ -1,0 +1,85 @@
+.btn{
+    position: relative;
+    cursor: pointer;
+    padding: 1rem;
+    width: 14rem;
+    border-radius: 3rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: $default-font-size;
+    box-shadow: 0 .5rem 2rem rgba($color-primary-dark, .5);
+    color: $color-white;
+
+    
+    &::after{
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1.5rem 3rem;
+        border-radius: 3rem;
+        z-index: -1;
+        transition: all .1s;
+    }
+
+    &:hover{
+         
+        &::after{
+            animation: click .2s;
+            
+        }
+
+    }
+
+    &:visited{
+        &::after{
+            
+            transform: scaleX(2);
+        }
+    }
+
+    &:active{
+        transform: scale(0.99,0.99);
+        font-size: 1.4rem;
+        
+    }
+
+    &--white{
+        background-color: $color-white;
+        color: $color-dark;
+    }
+
+    &--beautyBlue{
+        background-image: linear-gradient(180deg, #341FC0, #2d98da, #48dbfb, #4b7bec, #341FC0);
+    }
+
+    &--beautyOrange{
+        background-image: linear-gradient(180deg, #eb3b5a, #fd9644, #fed330, #fd9644, #eb3b5a);
+    }
+
+    &--beautyGreen{
+        background-image: linear-gradient(180deg, #009432, #2ED541, #7bed9f, #2ED541, #009432);
+    }
+
+    &--white::after{
+        background-color: $color-white;
+    }
+
+    &--beautyBlue::after{
+        background-image: linear-gradient(180deg, #341FC0, #2d98da, #48dbfb, #4b7bec, #341FC0);
+    }
+
+    &--beautyOrange::after{
+        background-image: linear-gradient(180deg, #eb3b5a, #fd9644, #fed330, #fd9644, #eb3b5a);
+    }
+
+    &--beautyGreen::after{
+        background-image: linear-gradient(180deg, #009432, #2ED541, #7bed9f, #2ED541, #009432);
+    }
+}
+

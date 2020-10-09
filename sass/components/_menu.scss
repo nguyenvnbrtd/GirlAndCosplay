@@ -1,0 +1,80 @@
+.menu{
+    position: relative;
+    width: 55rem;
+
+    &__icon{
+        position: absolute;
+        right: -13rem;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        background-image: url(../img/menu-icon.png);
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1, 1);
+        }
+        &:active{
+            transform: scale(0.9,0.9);
+        }
+        
+    }
+
+    &__search-box{
+        position: absolute;
+        right: -4rem;
+        display: none;
+        transition: all 0.2s;
+        animation: moveInRight 0.2s;
+        & .search{
+            margin-top: 2rem;
+            &__input{
+                font-weight: bold;
+                letter-spacing: 0.1rem;
+                color: $color-white;
+                background-image: linear-gradient(180deg, #81ecec, #74b9ff, #0984e3);
+            }
+        }
+    }
+
+    &__action{
+        position: absolute;
+        top: 10rem;
+        right: -4rem;
+        display: none;
+        transition: all 0.2s;
+        animation: moveInTop 0.2s;
+        
+        & .action{
+            width: 21rem;
+            padding: 1rem 0;
+            border-radius: 3rem;
+            text-align: center;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 1rem $color-white;
+            background-image: linear-gradient(180deg, #81ecec, #74b9ff, #0984e3);
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &:hover{
+                transform: scale(1.1,1.1);
+            }
+            &:active{
+                transform: scale(1,1);
+            }
+
+            & a{
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                text-decoration: none;
+                color: $color-white;
+            
+            }
+        }
+    }
+    
+}

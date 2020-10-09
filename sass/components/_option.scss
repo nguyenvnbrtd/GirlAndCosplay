@@ -1,0 +1,21 @@
+.option{
+    position: fixed;
+    z-index: 1;
+    transition: all 0.2s;
+    
+    &--menu{
+        top: 10rem;
+        right: 13rem;
+        animation: moveInTop 0.3s;
+    }
+
+    &--scrollToTop{
+        top: 19rem;
+        right: 13rem;
+        animation: moveInBottom 0.3s;
+    }
+
+    &--hide{
+        display: none;
+    }
+}

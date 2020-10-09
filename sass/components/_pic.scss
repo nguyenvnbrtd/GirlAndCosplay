@@ -1,0 +1,13 @@
+.pic{
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    & img{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+        max-width: 95%;
+        max-height: 60rem;
+        margin: 1rem 0;
+    }
+}

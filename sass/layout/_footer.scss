@@ -1,0 +1,53 @@
+.footer{
+    position: relative;
+    background-color: $color-dark;
+    padding: 3rem;
+    text-align: center;
+
+    &__copyright{
+        border-top: 1px solid $color-white;
+        position: relative;
+        display: inline-block;
+        width: 40rem;
+        margin-bottom: 1rem;
+        color: $color-white;
+    }
+
+    &__navigation{
+        border-top: 1px solid $color-white;
+        padding-top: 1rem;
+        display: inline-block;
+        text-align: center;
+    }
+
+    &__list{
+        list-style: none;
+        
+        & :not(:last-child){
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__item{
+        display: inline-block;
+
+    }
+
+    &__link{
+        
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        color: $color-white;
+        transition: all 0.2s;
+        &:hover{
+            color: $color-blue;
+            transform: scale(1.1,1.1);
+        }
+
+        &:active{
+            transform: scale(.9,.9);
+        }
+        
+    }
+}

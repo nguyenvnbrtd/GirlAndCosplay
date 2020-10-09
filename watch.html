@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <!-- GG font-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--Add this-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--Add this-->
+    <script src="./js/myScript.js"></script>
+    <script src="./js/pen.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+   
+    <link rel="icon" type="image/png" href="./img/logo.jpg">
+
+    <title>Cosplay And Model</title>
+</head>
+<body onload="showAlbum(); showListPicture();" onkeydown="keyDown(event)" >
+    <header class="header header--1 unselectable ">
+        <div class="header__user">
+            <div class="user__display user__font">
+                <div class="user__element">
+                    <a class="user__notify" href="##"></a>
+                </div>
+                <div class="user__element">
+                    <a class="user__avatar" href="##"></a>
+                </div>
+            </div>
+            <div class="user__display  user__back">
+                <div class="user__element">
+                    <a class="user__login" href="../login.html">Log In</a>
+                </div>
+                <div class="user__element">
+                    <a class="user__signin" href="##">Sign In</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__heading">
+            <a href="index.html">
+                <h3 class="heading">
+                    <div class="heading--main">
+                        <span class="heading-primary">Cosplay And Model</span>
+                        <div class="heading__logo">
+                            <img src="./img/logo.jpg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="heading--sub">
+                        <span class="heading-primary">Share With You</span>
+                    </div>
+                </h3>
+            </a>
+        </div>
+
+        <div class="header__search-box">
+            <div class="search search--1">
+                <div class="search__icon"></div>
+                <input class="search__input" placeholder="At least 2 letter" type="url">
+            </div>
+
+        </div>
+    </header>
+
+    <div class="option option--menu option--hide unselectable" id="option--menu">
+        <div class="menu">
+            <div class="menu__icon" onclick="showSearchBox(); showActionBox();"></div>
+            <div id="menu-search-box" class="menu__search-box">
+                <div class="search">
+                    <div class="search__icon"></div>
+                    <input class="search__input" placeholder="At least 2 letter" type="url">
+                </div>
+            </div>
+            <div id="menu-action-box" class="menu__action">
+                <div class="action">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="action">
+                    <a href="login.html">Log in</a>
+                </div>
+                <div class="action">
+                    <a href="##">Sign in</a>
+                </div>
+                <div class="action">
+                    <a href="##">Notify</a>
+                </div>
+                <div class="action">
+                    <a href="##">Favorite Box</a>
+                </div>
+                <div class="action">
+                    <a href="##">Log out</a>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="option option--scrollToTop option--hide" id="option--scrollToTop" onclick="scrollToTop(330)">
+        <div class="scrollTop">
+            <div class="scrollTop__icon"></div>
+        </div>
+    </div>
+
+    <section class = "picture">
+        <div class="picture__main">
+            <div class="picture__name">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, odio!
+            </div>
+            <div class="picture__discription">
+                <div class="picture__model picture__text">Model: <a href="##">aaaaaa</a></div>
+                <div class="picture__num-of-pic picture__text">Photo: 6 pic</div>
+                <div class="picture__day picture__text">Up load: 23/8/2021</div>
+                <div class="picture__add-favor picture__text">Add to favorite box</div>
+                
+                <div class="add__radio">
+                    <input type="radio" class="add__radio-input1" id="add1" name="favor1">
+                    <label for="add1" class="add__radio-label btn btn--beautyGreen unselectable" onclick="notify__add()">
+                        <span class="add__radio-button">ADD</span>                          
+                    </label>
+                    <input type="radio" class="add__radio-input2" id="remove1" name="favor1">
+                    <label for="remove1" class="add__radio-label btn btn--beautyOrange unselectable" onclick="notify__remove()">
+                        <span class="add__radio-button">REMOVE</span>
+                    </label>        
+                </div>
+                
+            </div>
+            <div class="pic">
+                <img id="img--1" alt="photo" onerror="this.style.display='none'; getPictureNum(1);; getPictureNum(); ">
+            </div>
+            <div class="pic">
+                <img id="img--2" alt="photo" onerror="this.style.display='none'; getPictureNum(2);" >
+            </div>
+            <div class="pic">
+                <img id="img--3" alt="photo" onerror="this.style.display='none'; getPictureNum(3);">
+            </div>
+            <div class="pic">
+                <img id="img--4" alt="photo" onerror="this.style.display='none'; getPictureNum(4);">
+            </div>
+            <div class="pic">
+                <img id="img--5" alt="photo" onerror="this.style.display='none'; getPictureNum(5);">
+            </div>
+            <div class="pic">
+                <img id="img--6" alt="photo" onerror="this.style.display='none'; getPictureNum(6);">
+            </div>
+            <div class="pic">
+                <img id="img--7" alt="photo" onerror="this.style.display='none'; getPictureNum(7);">
+            </div>
+            <div class="pic">
+                <img id="img--8" alt="photo" onerror="this.style.display='none'; getPictureNum(8);">
+            </div>
+            <div class="pic">
+                <img id="img--9" alt="photo" onerror="this.style.display='none'; getPictureNum(9);">
+            </div>
+            <div class="pic">
+                <img id="img--10" alt="photo" onerror="this.style.display='none'; getPictureNum(10);">
+            </div>
+            <div class="pic">
+                <img id="img--11" alt="photo" onerror="this.style.display='none'; getPictureNum(11);">
+            </div>
+            <div class="pic">
+                <img id="img--12" alt="photo" onerror="this.style.display='none'; getPictureNum(12);">
+            </div>
+            <div class="pic">
+                <img id="img--13" alt="photo" onerror="this.style.display='none'; getPictureNum(13);">
+            </div>
+            <div class="pic">
+                <img id="img--14" alt="photo" onerror="this.style.display='none'; getPictureNum(14);">
+            </div>
+            <div class="pic">
+                <img id="img--15" alt="photo" onerror="this.style.display='none'; getPictureNum(15);">
+            </div>
+            <div class="pic">
+                <img id="img--16" alt="photo" onerror="this.style.display='none'; getPictureNum(16);">
+            </div>
+            <div class="pic">
+                <img id="img--17" alt="photo" onerror="this.style.display='none'; getPictureNum(17);">
+            </div>
+            <div class="pic">
+                <img id="img--18" alt="photo" onerror="this.style.display='none'; getPictureNum(18);">
+            </div>
+            <div class="pic">
+                <img id="img--19" alt="photo" onerror="this.style.display='none'; getPictureNum(19);">
+            </div>
+            <div class="pic">
+                <img id="img--20" alt="photo" onerror="this.style.display='none'; getPictureNum(20);">
+            </div>
+            <div class="pic">
+                <img id="img--21" alt="photo" onerror="this.style.display='none'; getPictureNum(21);">
+            </div>
+            <div class="pic">
+                <img id="img--22" alt="photo" onerror="this.style.display='none'; getPictureNum(22);">
+            </div>
+            <div class="pic">
+                <img id="img--23" alt="photo" onerror="this.style.display='none'; getPictureNum(23);">
+            </div>
+            <div class="pic">
+                <img id="img--24" alt="photo" onerror="this.style.display='none'; getPictureNum(24);">
+            </div>
+            <div class="pic">
+                <img id="img--25" alt="photo" onerror="this.style.display='none'; getPictureNum(25);">
+            </div>
+            <div class="pic">
+                <img id="img--26" alt="photo" onerror="this.style.display='none'; getPictureNum(26);">
+            </div>
+            <div class="pic">
+                <img id="img--27" alt="photo" onerror="this.style.display='none'; getPictureNum(27);">
+            </div>
+            <div class="pic">
+                <img id="img--28" alt="photo" onerror="this.style.display='none'; getPictureNum(28);">
+            </div>
+            <div class="pic">
+                <img id="img--29" alt="photo" onerror="this.style.display='none'; getPictureNum(29);">
+            </div>
+            <div class="pic">
+                <img id="img--30" alt="photo" onerror="this.style.display='none'; getPictureNum(30);">
+            </div>
+            <div class="pic">
+                <img id="img--31" alt="photo" onerror="this.style.display='none'; getPictureNum(31);">
+            </div>
+            <div class="pic">
+                <img id="img--32" alt="photo" onerror="this.style.display='none'; getPictureNum(32);">
+            </div>
+            <div class="pic">
+                <img id="img--33" alt="photo" onerror="this.style.display='none'; getPictureNum(33);">
+            </div>
+            <div class="pic">
+                <img id="img--34" alt="photo" onerror="this.style.display='none'; getPictureNum(34);">
+            </div>
+            <div class="pic">
+                <img id="img--35" alt="photo" onerror="this.style.display='none'; getPictureNum(35);">
+            </div>
+            <div class="pic">
+                <img id="img--36" alt="photo" onerror="this.style.display='none'; getPictureNum(36);">
+            </div>
+            <div class="pic">
+                <img id="img--37" alt="photo" onerror="this.style.display='none'; getPictureNum(37);">
+            </div>
+            <div class="pic">
+                <img id="img--38" alt="photo" onerror="this.style.display='none'; getPictureNum(38);">
+            </div>
+            <div class="pic">
+                <img id="img--39" alt="photo" onerror="this.style.display='none'; getPictureNum(39);">
+            </div>
+            <div class="pic">
+                <img id="img--40" alt="photo" onerror="this.style.display='none'; getPictureNum(40);">
+            </div>
+            <div class="pic">
+                <img id="img--41" alt="photo" onerror="this.style.display='none'; getPictureNum(41);">
+            </div>
+            <div class="pic">
+                <img id="img--42" alt="photo" onerror="this.style.display='none'; getPictureNum(42);">
+            </div>
+            <div class="pic">
+                <img id="img--43" alt="photo" onerror="this.style.display='none'; getPictureNum(43);">
+            </div>
+            <div class="pic">
+                <img id="img--44" alt="photo" onerror="this.style.display='none'; getPictureNum(44);">
+            </div>
+            <div class="pic">
+                <img id="img--45" alt="photo" onerror="this.style.display='none'; getPictureNum(45);">
+            </div>
+            <div class="pic">
+                <img id="img--46" alt="photo" onerror="this.style.display='none'; getPictureNum(46);">
+            </div>
+            <div class="pic">
+                <img id="img--47" alt="photo" onerror="this.style.display='none'; getPictureNum(47);">
+            </div>
+            <div class="pic">
+                <img id="img--48" alt="photo" onerror="this.style.display='none'; getPictureNum(48);">
+            </div>
+            <div class="pic">
+                <img id="img--49" alt="photo" onerror="this.style.display='none'; getPictureNum(49);">
+            </div>
+            <div class="pic">
+                <img id="img--50" alt="photo" onerror="this.style.display='none'; getPictureNum(50);">
+            </div>
+
+            <div id="picture__number" class="picture__number">
+                <div class="number-index">
+                    <a id="number-index--1" href="##">&#8676;</a>
+                    <a id="number-index--2" href="##">&#8592;</a>
+                    <a id="number-index--3" href="##">1</a>
+                    <a id="number-index--4" href="##">2</a>
+                    <a id="number-index--5" href="##">3</a>
+                    <a id="number-index--6" href="##">4</a>
+                    <a id="number-index--7" href="##">&#8594;</a>
+                    <a id="number-index--8" href="##">&#8677;</a>
+                </div>
+            </div>
+
+            <div class="commentary">
+                
+                <div class="commentary__input">
+                    <div class="commentary__avatar author__avatar"></div>
+                    <div class="text-input" contenteditable="true" dir="auto" aria-label="Public commentary"></div>
+                    <a class="commentary__submit btn btn--beautyBlue" href="##">Post</a>
+                </div>
+                <div class="commentary__container"> 
+                    <div class="commentary__author">
+                        <div class="author author--1">
+                            <a href="##">
+                                <div class="author__avatar">
+                                </div>
+                                <div class="author__name">
+                                    Lean
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="commentary__content">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum?</p>
+                    </div>
+                    <div class="commentary__react">
+                        <div class="react react__like">
+                            <a href="##">Like</a>
+                            <div class="react__number react__number--like">15</div>
+                        </div>
+                        <div class="react react__dislike">
+                            <a href="##">Dislike</a>
+                            <div class="react__number react__number--dislike">0</div>
+                        </div>
+                        <div class="react react__reply">
+                            <a href="##">Reply</a>
+                        </div>
+                    </div>
+                    <div class="commentary__time">
+                        25/8/2020
+                    </div>
+                </div>
+                <div class="commentary__container"> 
+                    <div class="commentary__author">
+                        <div class="author author--2">
+                            <a href="##">
+                                <div class="author__avatar">
+                                </div>
+                                <div class="author__name">
+                                    Lean
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="commentary__content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minus ipsum molestiae expedita consequatur? Placeat amet sequi id ullam corrupti?</p>
+                    </div>
+                    <div class="commentary__react">
+                        <div class="react react__like">
+                            <a href="##">Like</a>
+                            <div class="react__number react__number--like">11</div>
+                        </div>
+                        <div class="react react__dislike">
+                            <a href="##">Dislike</a>
+                            <div class="react__number react__number--dislike">1</div>
+                        </div>
+                        <div class="react react__reply">
+                            <a href="##">Reply</a>
+                        </div>
+                    </div>
+                    <div class="commentary__time">
+                        25/8/2020
+                    </div>
+                </div>
+                <div class="commentary__container"> 
+                    <div class="commentary__author">
+                        <div class="author author--3">
+                            <a href="##">
+                                <div class="author__avatar">
+                                </div>
+                                <div class="author__name">
+                                    Lean
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="commentary__content">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum dicta suscipit pariatur ad, repellendus quia!</p>
+                    </div>
+                    <div class="commentary__react">
+                        <div class="react react__like">
+                            <a href="##">Like</a>
+                            <div class="react__number react__number--like">12</div>
+                        </div>
+                        <div class="react react__dislike">
+                            <a href="##">Dislike</a>
+                            <div class="react__number react__number--dislike">2</div>
+                        </div>
+                        <div class="react react__reply">
+                            <a href="##">Reply</a>
+                        </div>
+                    </div>
+                    <div class="commentary__time">
+                        25/8/2020
+                    </div>
+                </div>
+                <div class="commentary__container"> 
+                    <div class="commentary__author">
+                        <div class="author author--4">
+                            <a href="##">
+                                <div class="author__avatar">
+                                </div>
+                                <div class="author__name">
+                                    Lean
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="commentary__content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat sapiente doloremque esse hic, eveniet cumque.</p>
+                    </div>
+                    <div class="commentary__react">
+                        <div class="react react__like">
+                            <a href="##">Like</a>
+                            <div class="react__number react__number--like">15</div>
+                        </div>
+                        <div class="react react__dislike">
+                            <a href="##">Dislike</a>
+                            <div class="react__number react__number--dislike">2</div>
+                        </div>
+                        <div class="react react__reply">
+                            <a href="##">Reply</a>
+                        </div>
+                    </div>
+                    <div class="commentary__time">
+                        25/8/2020
+                    </div>
+                </div>
+                <div class="commentary__more">
+                    <a href="##">More &#10597;</a>
+                </div>
+            </div>
+        </div>
+        <div class="picture__sub">
+           
+            
+            <div id="item--1" class="item item--normal">
+                <a href="#popup" onclick="resetSlide(1); currentSlide(1);">
+                    <div class="item__name">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </a>
+            </div>
+            <div id="item--2" class="item item--normal">
+                <a href="#popup" onclick="resetSlide(2); currentSlide(1);">
+                    <div class="item__name">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </a>
+            </div>
+            <div id="item--3" class="item item--normal">
+                <a href="#popup" onclick="resetSlide(3); currentSlide(1);">
+                    <div class="item__name">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </a>
+            </div>
+            <div id="item--4" class="item item--normal">
+                <a href="#popup" onclick="resetSlide(4); currentSlide(1);">
+                    <div class="item__name">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </a>
+            </div>
+            <div id="item--5" class="item item--normal">
+                <a href="#popup" onclick="resetSlide(5); currentSlide(1);">
+                    <div class="item__name">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </a>
+            </div>
+            <div id="item--6" class="item item--normal">
+                <a href="#popup" onclick="resetSlide(6); currentSlide(1);">
+                    <div class="item__name">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </a>
+            </div>
+            <div id="item--7" class="item item--normal">
+                <a href="#popup" onclick="resetSlide(7); currentSlide(1);">
+                    <div class="item__name">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </a>
+            </div>
+            <div id="item--8" class="item item--normal">
+                <a href="#popup" onclick="resetSlide(8); currentSlide(1);">
+                    <div class="item__name">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </a>
+            </div>
+
+               
+        </div>
+    </section>
+
+    <div class="popup__notify">
+        <div class="notify " id="notify--add">
+            The album is added !
+        </div>
+        <div class="notify " id="notify--remove">
+            The album is removed !
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        
+        <div class="popup__container">
+            <div class="popup__close">
+                <a id="exit-popup" href="##"></a>
+            </div>
+            <div class="popup__main">
+                <!--add form w3schools.com-->
+                <div class="popup__slide">
+                    <!-- Slideshow container add form w3schools.com-->
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                            <img id="slide--1" alt="photo">
+                        </div>
+                        <div class="mySlides fade">
+                            <img id="slide--2" alt="photo">
+                        </div>
+                        <div class="mySlides fade">
+                            <img id="slide--3" alt="photo">
+                        </div>
+                        <div class="mySlides fade">
+                            <img id="slide--4" alt="photo">
+                        </div>
+                        
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <!-- The dots/circles -->
+                    <div class="little-point">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+                <div class="popup__action">
+                    <div class="popup__description">
+                        <div class="popup__description--heading popup__text"><span class="heading-secondary">Lorem ipsum dolor sit amet.</span></div>
+                        <div class="popup__description--model popup__text">Model: <a href="##">aaaaaaaa</a></div>
+                        <div class="popup__description--num-of-pic popup__text">Photo: 5 pic</div>
+                        <div class="popup__description--day popup__text">Up load: 23/8/2020</div>
+                    </div>
+                    
+                    <div class="popup__open">
+                        <a id="popup__open" class="btn btn--beautyBlue unselectable" href="##">open</a>
+                    </div>
+                    <div class="add__radio">
+                        <input type="radio" class="add__radio-input1" id="add" name="favor">
+                        <label for="add" class="add__radio-label btn btn--beautyGreen unselectable" onclick="notify__add()">
+                            <span class="add__radio-button">ADD</span>                          
+                        </label>
+                        <input type="radio" class="add__radio-input2" id="remove" name="favor">
+                        <label for="remove" class="add__radio-label btn btn--beautyOrange unselectable" onclick="notify__remove()">
+                            <span class="add__radio-button">REMOVE</span>
+                        </label>
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="##" class="footer__link">Address</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="##" class="footer__link">Contacts</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="##" class="footer__link">Policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="##" class="footer__link">Sponsors</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Copyright &copy;. All rights reserved belong to page Musume Cosplay and Model. All rights belong to cosplayer, model and photography.
+                </p>
+            </div>
+        </div>
+    
+    </footer>
+
+</body>
+</html>

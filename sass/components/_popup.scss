@@ -1,0 +1,167 @@
+.popup{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-dark,.8);
+
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    animation: hidden 2s;
+
+    &__close{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+        
+    }
+
+    &__main{
+        position: relative;
+        width: 60%;
+        height: 53rem;
+        margin: auto;
+        margin-top: 5rem;
+    }
+
+    &__slide{
+        width: 35rem;
+        display: inline-block;
+    }
+
+    &__action{
+        position: absolute;
+        right: 0;
+        width: 35rem;
+        height: 47rem;
+        padding: 2rem;
+        display: inline-block;
+        background-color: $color-white;
+        border-radius: 2rem;
+    }
+
+    &__open{
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+    }
+
+    & .add__radio{
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+       
+
+    }
+
+    &__text{
+        text-align: center;
+        height: 3rem;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__description{
+        padding: 5rem;
+        padding-top: 0;
+
+        &--heading{
+            position: relative;
+            height: 20rem;
+            overflow: hidden;
+
+            & span{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 100%;
+                max-height: 100%;
+            }
+        }
+
+        &--model{
+            & a{
+                display: inline-block;
+                text-decoration: none;
+                color: $color-dark;
+                transition: all 0.2s;
+                &:hover{
+                    color: $color-blue;
+                    transform: scale(1.05,1.05);
+                }
+            }
+        }
+
+    }
+
+    &:target{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__notify{
+        position: fixed;
+        bottom: 5rem;
+        left: 50%;
+        transform: translate(-50%,0);
+        z-index: 1001;
+
+        & .notify{
+            width: 25rem;
+            padding: 1rem;
+            font-size: 2rem;
+            border-radius: 2rem;
+            text-align: center;
+            background-color: $color-white;
+            display: none;
+
+            &--show{
+                display: inline-block;
+                animation: notify 2s;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+}
+
+.add__radio{
+
+    & .btn--beautyOrange {
+        display: none;
+    }
+        
+    &-input1:checked ~ .btn--beautyGreen {
+        display: none;
+    }
+
+    &-input1:checked ~ .btn--beautyOrange{
+        display: inline-block;
+    }
+
+    &-input2:checked ~ .btn--beautyGreen {
+        display: inline-block;
+    }
+
+    &-input2:checked ~ .btn--beautyOrange{
+        display: none;
+    }
+
+    &-input1{
+        display: none;
+    }  
+
+    &-input2{
+        display: none;
+    }  
+}

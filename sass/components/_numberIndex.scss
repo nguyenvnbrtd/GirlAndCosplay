@@ -1,0 +1,33 @@
+.number-index{
+    width: fit-content;
+    margin: 0 auto;
+    
+    &--chosen{
+        background-color: #b2bec3 !important;
+    
+    }
+
+    & a{
+        display: inline-block;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #757575;
+        border-radius: 50%;
+        box-shadow: 0 0 1rem;
+        width: 3.8rem;
+        height: 3.8rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        transition: all 0.3s;
+
+        &:not(:last-of-type){
+            margin-right: 1rem;
+        }
+
+        &:hover{
+            background-color: #b2bec3;
+            transform: scale(1.05,1.05);
+        }
+    }
+}

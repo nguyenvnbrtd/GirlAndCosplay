@@ -1,0 +1,34 @@
+//color
+
+$color-blue: #3b5cdd;
+$color-blue-light: #55defb;
+$color-blue-dark: #0e31bb;
+$color-yellow-light: hsl(53, 78%, 84%);
+$color-dark: #757575;
+$color-white: #ffffff;
+$color-primary: #ff9ff3;
+$color-primary-light: #ffd4fa;
+$color-primary-dark: #9b59b6;
+$color-red: #e74c3c;
+$color-red-light:#ff7675;
+
+    //tag-color
+    $question: #f6e58d;
+    $find-album: #6ab04c;
+    $find-model: #be2edd;
+    $for-fun: #ff7979;
+
+//font
+$default-font-size: 1.6rem;
+$font-size-big: 6.2rem;
+
+$font-smooth: 'Dancing Script', cursive;
+
+
+//distance
+$grid-width: 114rem;
+$gutter-vertical: 2rem;    // margin bottom giữa các row
+$gutter-vertical-small: 1rem;
+$gutter-horizontal: 2rem;   // giá trị khoảng cách giữa các column
+// abstracts/_variables.scss
+$default-font-size: 1.6rem;

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <!-- GG font-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--Add this-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--Add this-->
+    <script src="./js/myScript.js"></script>
+    <script src="./js/pen.js"></script>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+   
+    <link rel="icon" type="image/png" href="./img/logo.jpg">
+
+    <title>Cosplay And Model</title>
+</head>
+
+<body onload = "loadItemHome(); showItemHome(); " onkeydown="keyDown(event)">
+    <header class="header unselectable">
+        <div class="header__user">
+            <div class="user__display user__font">
+                <div class="user__element">
+                    <a class="user__notify" href="##"></a>
+                </div>
+                <div class="user__element">
+                    <a class="user__avatar" href="##"></a>
+                </div>
+            </div>
+            <div class="user__display  user__back">
+                <div class="user__element">
+                    <a class="user__login" href="login.html">Log In</a>
+                </div>
+                <div class="user__element">
+                    <a class="user__signin" href="##">Sign In</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__heading">
+            <a href="index.html">
+                <h3 class="heading">
+                    <div class="heading--main">
+                        <span class="heading-primary">Cosplay And Model</span>
+                        <div class="heading__logo">
+                            <img src="./img/logo.jpg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="heading--sub">
+                        <span class="heading-primary">Share With You</span>
+                    </div>
+                </h3>        
+            </a>
+        </div>
+
+        <div class="header__search-box">
+            <div class="search">
+                <div class="search__icon"></div>
+                <input class="search__input" placeholder="At least 2 letter" type="url">
+            </div>
+
+        </div>
+    </header>
+
+    <div id="notification" class="notification">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nemo excepturi iure pariatur eaque distinctio?
+    </div>
+        
+    <div class="option option--menu option--hide unselectable" id="option--menu">
+        <div class="menu">
+            <div class="menu__icon" onclick="showSearchBox(); showActionBox();"></div>
+            <div id="menu-search-box" class="menu__search-box">
+                <div class="search">
+                    <div class="search__icon"></div>
+                    <input class="search__input" placeholder="At least 2 letter" type="url">
+                </div>
+            </div>
+            <div id="menu-action-box" class="menu__action">
+                <div class="action">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="action">
+                    <a href="login.html">Log in</a>
+                </div>
+                <div class="action">
+                    <a href="##">Sign in</a>
+                </div>
+                <div class="action">
+                    <a href="##">Notify</a>
+                </div>
+                <div class="action">
+                    <a href="##">Favorite Box</a>
+                </div>
+                <div class="action">
+                    <a href="##">Log out</a>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="option option--scrollToTop option--hide" id="option--scrollToTop" onclick="scrollToTop(0)">
+        <div class="scrollTop">
+            <div class="scrollTop__icon"></div>
+        </div>
+    </div>
+
+    <section class="content">
+        <div class="content__top">
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="content__split">
+                        <div id="item--1" class="item item--big">
+                            <a href="#popup" onclick="resetSlide(1); currentSlide(1);">
+                                <div class="item__name">
+                                    Lorem ipsum dolor sit amet.
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="content__split">
+                        <div class="content__split--top">
+                            <div class="row">
+                                <div class="col-1-of-2">
+                                    <div id="item--2" class="item item--small">
+                                        <a href="#popup" onclick="resetSlide(2); currentSlide(1);" >
+                                            <div class="item__name">
+                                                Lorem ipsum dolor sit amet.
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1-of-2">
+                                    <div id="item--3" class="item item--small"> 
+                                        <a href="#popup" onclick="resetSlide(3); currentSlide(1);">    
+                                            <div class="item__name">
+                                                Lorem ipsum dolor sit amet.
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__split--bot">
+                            <div id="item--4" class="item item--long">
+                                <a href="#popup" onclick="resetSlide(4); currentSlide(1);">
+                                    <div class="item__name">
+                                        Lorem ipsum dolor sit amet.
+                                    </div>
+                                </a>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="content__main">
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div id="item--5" class="item item--normal">
+                        <a href="#popup" onclick="resetSlide(5); currentSlide(1);">
+                            <div class="item__name">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div id="item--6" class="item item--normal">
+                        <a href="#popup" onclick="resetSlide(6); currentSlide(1);">
+                            <div class="item__name">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div id="item--7" class="item item--normal">
+                        <a href="#popup" onclick="resetSlide(7); currentSlide(1);">
+                            <div class="item__name">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div id="item--8" class="item item--normal">
+                        <a href="#popup" onclick="resetSlide(8); currentSlide(1);">
+                            <div class="item__name">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div id="item--9" class="item item--normal">
+                        <a href="#popup" onclick="resetSlide(9); currentSlide(1);">
+                            <div class="item__name">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div id="item--10" class="item item--normal">
+                        <a href="#popup" onclick="resetSlide(10); currentSlide(1);">
+                            <div class="item__name">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div id="item--11" class="item item--normal">
+                        <a href="#popup" onclick="resetSlide(11); currentSlide(1);">
+                            <div class="item__name">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div id="item--12" class="item item--normal">
+                        <a href="#popup" onclick="resetSlide(12); currentSlide(1);">
+                            <div class="item__name">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div id="item--13" class="item item--normal">
+                        <a href="#popup" onclick="resetSlide(13); currentSlide(1);">
+                            <div class="item__name">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="item__all unselectable">
+                <a href="album.html?index=1">View all &#10143;</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="topic">
+        <div class="topic__heading">
+            <span class="heading-secondary">topic</span>
+        </div>
+        <div class="topic__content">
+            <div class="post post--1">
+                <div class="post__author"></div>
+                <div class="post__heading">
+                    <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet.</a>
+                </div>
+                <div class="post__tag">
+                    <div class="tag__tag">Tag:</div>
+                    <div class="tag__color"></div>
+                </div>
+            </div>
+            <div class="post post--2">
+                <div class="post__author"></div>
+                <div class="post__heading">
+                    <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet.</a>
+                </div>
+                <div class="post__tag">
+                    <div class="tag__tag">Tag:</div>
+                    <div class="tag__color"></div>
+                </div>
+            </div>
+            <div class="post post--3">
+                <div class="post__author"></div>
+                <div class="post__heading">
+                    <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet.</a>
+                </div>
+                <div class="post__tag">
+                    <div class="tag__tag">Tag:</div>
+                    <div class="tag__color"></div>
+                </div>
+            </div>
+            <div class="post post--4">
+                <div class="post__author"></div>
+                <div class="post__heading">
+                    <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet.</a>
+                </div>
+                <div class="post__tag">
+                    <div class="tag__tag">Tag:</div>
+                    <div class="tag__color"></div>
+                </div>
+            </div>
+            <div class="item__all unselectable">
+                <a href="##">View all &#10143;</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="popup" id="popup">
+        <div class="popup__notify">
+            <div class="notify " id="notify--add">
+                The album is added !
+            </div>
+            <div class="notify " id="notify--remove">
+                The album is removed !
+            </div>
+        </div>
+        <div class="popup__container">
+            <div class="popup__close">
+                <a id="exit-popup" href="##"></a>
+            </div>
+            <div class="popup__main">
+                <!--add form w3schools.com-->
+                <div class="popup__slide">
+                    <!-- Slideshow container add form w3schools.com-->
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                            <img id="slide--1" alt="photo">
+                        </div>
+                        <div class="mySlides fade">
+                            <img id="slide--2" alt="photo">
+                        </div>
+                        <div class="mySlides fade">
+                            <img id="slide--3" alt="photo">
+                        </div>
+                        <div class="mySlides fade">
+                            <img id="slide--4" alt="photo">
+                        </div>
+                        
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <!-- The dots/circles -->
+                    <div class="little-point">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+                <div class="popup__action">
+                    <div class="popup__description">
+                        <div class="popup__description--heading popup__text"><span class="heading-secondary">Lorem ipsum dolor sit amet.</span></div>
+                        <div class="popup__description--model popup__text">Model: <a href="##">aaaaaaaa</a></div>
+                        <div class="popup__description--num-of-pic popup__text">Photo: 5 pic</div>
+                        <div class="popup__description--day popup__text">Up load: 23/8/2020</div>
+                    </div>
+                    
+                    <div class="popup__open">
+                        <a id="popup__open" class="btn btn--beautyBlue unselectable" href="##">open</a>
+                    </div>
+                    <div class="add__radio">
+                        <input type="radio" class="add__radio-input1" id="add" name="favor">
+                        <label for="add" class="add__radio-label btn btn--beautyGreen unselectable" onclick="notify__add()">
+                            <span class="add__radio-button">ADD</span>                          
+                        </label>
+                        <input type="radio" class="add__radio-input2" id="remove" name="favor">
+                        <label for="remove" class="add__radio-label btn btn--beautyOrange unselectable" onclick="notify__remove()">
+                            <span class="add__radio-button">REMOVE</span>
+                        </label>
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="##" class="footer__link">Address</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="##" class="footer__link">Contacts</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="##" class="footer__link">Policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="##" class="footer__link">Sponsors</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Copyright &copy;. All rights reserved belong to page Musume Cosplay and Model. All rights belong to cosplayer, model and photography.
+                </p>
+            </div>
+        </div>
+    
+    </footer>
+
+</html>
