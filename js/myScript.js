@@ -1,4 +1,4 @@
-const maxItem = 20;
+const maxItem = 24;
 var slideIndex = 1;
 var previous = 1;
 var first = 1
