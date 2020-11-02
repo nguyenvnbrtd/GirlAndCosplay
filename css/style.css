@@ -139,6 +139,12 @@ body {
   to {
     display: none; } }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -650,7 +656,8 @@ body {
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none; }
+  user-select: none;
+  z-index: 2; }
 
 /* Position the "next button" to the right */
 .next {
@@ -1164,3 +1171,24 @@ body {
   .text-input:focus {
     outline: none;
     border-bottom: 2px solid #757575; }
+
+.loading-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf0f1;
+  z-index: 2; }
+
+.loader {
+  display: inline-block;
+  border: 0rem solid #f3f3f3;
+  border-top: 0.4rem solid #84817a;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  animation: spin 1.5s linear infinite; }

@@ -1,4 +1,4 @@
-const maxItem = 24;
+const maxItem = 20;
 var slideIndex = 1;
 var previous = 1;
 var first = 1
@@ -34,6 +34,9 @@ function showSlides(n) {
 }
 // reset the slides and add new, reset target page, n is the index of folder image,
 function resetSlide(n){
+    //reset loading-page
+    loading_img();
+
     n = parseInt(document.getElementById("item--"+n).style.backgroundImage.split('/')[1]);
 
     document.getElementById("popup__open").href = "watch.html?x="+n+"&index=1";
@@ -42,6 +45,8 @@ function resetSlide(n){
     resetImg(2, n);
     resetImg(3, n);
     resetImg(4, n);
+
+    
 }
 // change an img, n is the index of images, m is index of folders
 function resetImg(n, m){
@@ -284,3 +289,16 @@ function getPictureNum(n){
     }
     
 }
+
+//set it up
+function loading_img(){
+    document.getElementById("loading-slide").style.display = "flex";
+}
+
+//loaded image
+
+function loaded_img(){
+    document.getElementById("loading-slide").style.display = "none";
+}
+
+

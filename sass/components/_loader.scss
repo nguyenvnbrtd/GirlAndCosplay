@@ -1,0 +1,24 @@
+.loading-page{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecf0f1;
+    z-index: 2;
+    display: none;
+}
+
+.loader { //add form w3school.com
+    display: inline-block;
+    border: 0rem solid #f3f3f3;
+    border-top: 0.4rem solid #84817a;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    animation: spin 1.5s linear infinite;
+}
+  

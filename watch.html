@@ -523,10 +523,12 @@
                 <div class="popup__slide">
                     <!-- Slideshow container add form w3schools.com-->
                     <div class="slideshow-container">
-
+						<div class="loading-page" id="loading-slide">
+                            <div class="loader"></div>
+                        </div>
                         <!-- Full-width images with number and caption text -->
                         <div class="mySlides fade">
-                            <img id="slide--1" alt="photo">
+                            <img id="slide--1" alt="photo" onload="loaded_img()">
                         </div>
                         <div class="mySlides fade">
                             <img id="slide--2" alt="photo">

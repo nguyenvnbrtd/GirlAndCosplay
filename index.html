@@ -27,9 +27,11 @@
     <link rel="icon" type="image/png" href="./img/logo.jpg">
 
     <title>Cosplay And Model</title>
+    
 </head>
-
 <body onload = "loadItemHome(); showItemHome(); " onkeydown="keyDown(event)">
+    
+    
     <header class="header unselectable">
         <div class="header__user">
             <div class="user__display user__font">
@@ -45,7 +47,7 @@
                     <a class="user__login" href="login.html">Log In</a>
                 </div>
                 <div class="user__element">
-                    <a class="user__signin" href="signin.html">Sign In</a>
+                    <a class="user__signin" href="##">Sign In</a>
                 </div>
             </div>
         </div>
@@ -96,7 +98,7 @@
                     <a href="login.html">Log in</a>
                 </div>
                 <div class="action">
-                    <a href="signin.html">Sign in</a>
+                    <a href="##">Sign in</a>
                 </div>
                 <div class="action">
                     <a href="##">Notify</a>
@@ -316,7 +318,7 @@
         </div>
     </section>
 
-    <div class="popup" id="popup">
+    <div class="popup" id="popup" >
         <div class="popup__notify">
             <div class="notify " id="notify--add">
                 The album is added !
@@ -334,10 +336,12 @@
                 <div class="popup__slide">
                     <!-- Slideshow container add form w3schools.com-->
                     <div class="slideshow-container">
-
+                        <div class="loading-page" id="loading-slide">
+                            <div class="loader"></div>
+                        </div>
                         <!-- Full-width images with number and caption text -->
                         <div class="mySlides fade">
-                            <img id="slide--1" alt="photo">
+                            <img id="slide--1" alt="photo" onload="loaded_img()">
                         </div>
                         <div class="mySlides fade">
                             <img id="slide--2" alt="photo">
