@@ -57,6 +57,9 @@ body {
   box-sizing: border-box;
   background-color: rgba(117, 117, 117, 0.2); }
 
+.mg-b-2 {
+  margin-bottom: 2rem; }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -231,28 +234,6 @@ body {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 4rem; }
-
-.topic {
-  position: relative; }
-  .topic__heading {
-    position: relative;
-    width: 60%;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    text-transform: uppercase; }
-    .topic__heading span {
-      background-image: linear-gradient(to right, #0e31bb, #55defb); }
-  .topic__content {
-    position: relative;
-    width: 60%;
-    height: 48rem;
-    padding: 5rem;
-    scroll-padding-bottom: 0;
-    margin: 0 auto;
-    margin-bottom: 10rem;
-    border-radius: 3rem;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 1rem #757575; }
 
 .header {
   position: relative;
@@ -555,11 +536,15 @@ body {
   .post__heading {
     position: absolute;
     display: inline-block;
-    height: 3rem;
-    overflow: hidden; }
+    width: 88%; }
     .post__heading a {
+      display: inline-block;
       color: #757575;
-      text-decoration: none; }
+      text-decoration: none;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
   .post__tag {
     position: absolute;
     top: 2.5rem;
@@ -1182,7 +1167,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #ecf0f1;
-  z-index: 2; }
+  z-index: 2;
+  display: none; }
 
 .loader {
   display: inline-block;
@@ -1192,3 +1178,48 @@ body {
   width: 10rem;
   height: 10rem;
   animation: spin 1.5s linear infinite; }
+
+.topic {
+  position: relative; }
+  .topic__heading {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    text-transform: uppercase; }
+    .topic__heading span {
+      background-image: linear-gradient(to right, #0e31bb, #55defb); }
+  .topic__content {
+    position: relative;
+    width: 60%;
+    padding: 5rem;
+    scroll-padding-bottom: 0;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    border-radius: 3rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 1rem #757575; }
+  .topic__select {
+    position: relative;
+    width: 55%;
+    padding: 1.5rem;
+    scroll-padding-bottom: 0;
+    margin: 0 auto;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 1rem #757575; }
+  .topic__sort {
+    position: relative;
+    width: 15rem;
+    height: 3rem;
+    box-shadow: 0 0 1rem;
+    margin-bottom: 5rem;
+    padding: 0 1rem;
+    text-align: center;
+    border-radius: 2rem; }
+  .topic__author {
+    position: relative;
+    background-color: #3b5cdd;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2rem; }

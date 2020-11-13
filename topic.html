@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <!-- GG font-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--Add this-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--Add this-->
+    <script src="./js/myScript.js"></script>
+    <script src="./js/pen.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="icon" type="image/png" href="./img/logo.jpg">
+
+    <title>Album Cosplay And Model</title>
+</head>
+
+<body>
+    <header class="header header--1 unselectable ">
+        <div class="header__user">
+            <div class="user__display user__font">
+                <div class="user__element">
+                    <a class="user__notify" href="##"></a>
+                </div>
+                <div class="user__element">
+                    <a class="user__avatar" href="##"></a>
+                </div>
+            </div>
+            <div class="user__display  user__back">
+                <div class="user__element">
+                    <a class="user__login" href="login.html">Log In</a>
+                </div>
+                <div class="user__element">
+                    <a class="user__signin" href="signin.html">Sign In</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__heading">
+            <a href="index.html">
+                <h3 class="heading">
+                    <div class="heading--main">
+                        <span class="heading-primary">Cosplay And Model</span>
+                        <div class="heading__logo">
+                            <img src="./img/logo.jpg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="heading--sub">
+                        <span class="heading-primary">Share With You</span>
+                    </div>
+                </h3>
+            </a>
+        </div>
+
+        <div class="header__search-box">
+            <div class="search search--1">
+                <div class="search__icon"></div>
+                <input class="search__input" placeholder="At least 2 letter" type="url">
+            </div>
+
+        </div>
+    </header>
+
+    <div class="option option--menu option--hide unselectable" id="option--menu">
+        <div class="menu">
+            <div class="menu__icon" onclick="showSearchBox(); showActionBox();"></div>
+            <div id="menu-search-box" class="menu__search-box">
+                <div class="search">
+                    <div class="search__icon"></div>
+                    <input class="search__input" placeholder="At least 2 letter" type="url">
+                </div>
+            </div>
+            <div id="menu-action-box" class="menu__action">
+                <div class="action">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="action">
+                    <a href="login.html">Log in</a>
+                </div>
+                <div class="action">
+                    <a href="signin.html">Sign in</a>
+                </div>
+                <div class="action">
+                    <a href="##">Notify</a>
+                </div>
+                <div class="action">
+                    <a href="##">Favorite Box</a>
+                </div>
+                <div class="action">
+                    <a href="##">Log out</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="option option--scrollToTop option--hide" id="option--scrollToTop" onclick="scrollToTop(330)">
+        <div class="scrollTop">
+            <div class="scrollTop__icon"></div>
+        </div>
+    </div>
+
+
+    <section class="topic" style="margin-top: 5rem;">
+        <div class="topic__select"></div>
+        <div class="topic__content">
+            <div class="topic__sort">
+                Sort by: <div id="sort--select" style="width: fit-content; display: inline-block;">Time</div>
+            </div>
+
+            <div class="topic__author">User</div>
+            <div class="topic__author-group">
+
+                <div class="post post--1">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem
+                            ipsum, dolor sit amet consectetur adipisicing elit. Nobis, laboriosam!</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--2">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--3">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--4">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--1">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--3">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="item__all unselectable mg-b-2">
+                    <a href="./topic.html">View all &#10143;</a>
+                </div>
+                
+            </div>
+
+            <div class="topic__author">Cosplayer</div>
+            <div class="topic__author-group">
+
+                <div class="post post--1">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem
+                            ipsum, dolor sit amet consectetur adipisicing elit. Nobis, laboriosam!</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--2">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--3">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--4">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--1">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--3">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="item__all unselectable mg-b-2">
+                    <a href="./topic.html">View all &#10143;</a>
+                </div>
+                
+            </div>
+
+            <div class="topic__author">Photographer</div>
+            <div class="topic__author-group">
+
+                <div class="post post--1">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem
+                            ipsum, dolor sit amet consectetur adipisicing elit. Nobis, laboriosam!</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--2">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--3">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--4">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--1">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--3">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="item__all unselectable mg-b-2">
+                    <a href="./topic.html">View all &#10143;</a>
+                </div>
+                
+            </div>
+
+            <div class="topic__author">Admin</div>
+            <div class="topic__author-group">
+
+                <div class="post post--1">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem
+                            ipsum, dolor sit amet consectetur adipisicing elit. Nobis, laboriosam!</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--2">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--3">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--4">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--1">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="post post--3">
+                    <div class="post__author"></div>
+                    <div class="post__heading">
+                        <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                            dolor sit amet.</a>
+                    </div>
+                    <div class="post__tag">
+                        <div class="tag__tag">Tag:</div>
+                        <div class="tag__color"></div>
+                    </div>
+                </div>
+                <div class="item__all unselectable mg-b-2">
+                    <a href="./topic.html">View all &#10143;</a>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="##" class="footer__link">Address</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="##" class="footer__link">Contacts</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="##" class="footer__link">Policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="##" class="footer__link">Sponsors</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Copyright &copy;. All rights reserved belong to page Musume Cosplay and Model. All rights belong to
+                    cosplayer, model and photography.
+                </p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
