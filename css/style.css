@@ -259,6 +259,13 @@ body {
         font-size: 4.2rem; }
     .header--1 .header__user a {
       color: #ffffff; }
+  .header--2 {
+    background-image: linear-gradient(to right, rgba(117, 117, 117, 0.4), rgba(117, 117, 117, 0.25)), url(../img/bg5.jpg);
+    background-position: left -25rem;
+    margin-bottom: 2.5%;
+    height: 50rem; }
+    .header--2 .header__heading {
+      margin-top: 10rem; }
   .header__user {
     position: relative;
     height: 3rem;
@@ -521,7 +528,7 @@ body {
 
 .post {
   position: relative;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
   height: 7rem; }
   .post__author {
     position: relative;
@@ -549,6 +556,13 @@ body {
     position: absolute;
     top: 2.5rem;
     display: inline-block; }
+  .post__info {
+    position: absolute;
+    right: 0;
+    top: 2.5rem; }
+    .post__info--element {
+      display: inline-block;
+      margin: 0 1rem; }
   .post--1 .post__author {
     background-image: url("../img/author-1.jpg"); }
   .post--1 .tag__color {
@@ -1201,13 +1215,25 @@ body {
     box-shadow: 0 0 1rem #757575; }
   .topic__select {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 55%;
-    padding: 1.5rem;
-    scroll-padding-bottom: 0;
-    margin: 0 auto;
-    border-radius: 1rem;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 1rem #757575; }
+    margin: 0 auto; }
+    .topic__select--element {
+      display: inline-block;
+      width: 10rem;
+      margin: 0 0.5rem;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 1rem;
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0 1rem #757575;
+      transition: all 0.2s; }
+      .topic__select--element:hover {
+        transform: scale(1.05, 1.05); }
+      .topic__select--element:active {
+        transform: scale(1, 1); }
   .topic__sort {
     position: relative;
     width: 15rem;
@@ -1222,4 +1248,6 @@ body {
     background-color: #3b5cdd;
     color: #ffffff;
     text-align: center;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 700; }

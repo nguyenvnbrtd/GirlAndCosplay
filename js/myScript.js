@@ -4,6 +4,14 @@ var previous = 1;
 var first = 1
 var totalPicture = 0;
 
+//tag__color
+var tag_color1 = "#f6e58d"; //question
+var tag_color2 = "#e74c3c"; //discussion
+var tag_color3 = "#6ab04c"; //fin_album
+var tag_color4 = "#be2edd"; //find_model
+var tag_color5 = "#ff7979"; //for_fun
+
+
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -302,3 +310,34 @@ function loaded_img(){
 }
 
 
+//topic selected
+function topicSelect(n){
+    var id = "topic__select--element"+n;
+    document.getElementById(id).style.zIndex = "1";
+    var tagColors = document.getElementsByClassName("tag__color");
+    var color = tag_color1;
+    if(n==1)
+        var color = tag_color1;
+    else if(n==2)
+        var color = tag_color2;
+    else if(n==3)
+        var color = tag_color3;
+    else if(n==4)
+        var color = tag_color4;
+    else if(n==5){
+        var color = tag_color5;
+    }
+    if(n!=6){
+        for(var i = 4; i < tagColors.length; i++){
+            tagColors[i].style.backgroundColor = color; //change color
+        }    
+    }
+    
+    for(var i = 1; i <= 6; i++){
+        var idd = "topic__select--element"+i;
+        if(i!=n){
+            document.getElementById(idd).style.zIndex = "0";
+        }
+
+    }
+}

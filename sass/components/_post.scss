@@ -1,6 +1,6 @@
 .post{
     position: relative;
-    margin-bottom: 2rem;
+    margin: 1rem 0;
     height: 7rem;
 
     &__author{
@@ -18,12 +18,16 @@
     &__heading{
         position: absolute;
         display: inline-block;
-        height: 3rem;
-        overflow: hidden;
+        width: 88%;
         
         & a{
-            color: $color-dark;
+            display: inline-block;
+            color: #757575;
             text-decoration: none;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
 
@@ -31,6 +35,26 @@
         position: absolute;
         top: 2.5rem;
         display: inline-block;
+    }
+
+    &__info{
+        position: absolute;
+        right: 0;
+        top: 2.5rem;
+
+        &--element{
+            display: inline-block;
+            margin: 0 1rem;    
+        }
+
+    }
+
+    &__time{
+
+    }
+
+    &__react{
+
     }
 
     &--1{

@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <header class="header header--1 unselectable ">
+    <header class="header header--1 header--2 unselectable ">
         <div class="header__user">
             <div class="user__display user__font">
                 <div class="user__element">
@@ -112,9 +112,91 @@
         </div>
     </div>
 
+    <section class="topic">
+        <div class="topic__heading">
+            <a href="##">
+                <span class="heading-secondary">hot topic</span>
+            </a>
+        </div>
+        <div class="topic__content">
+            <div class="post post--1">
+                <div class="post__author"></div>
+                <div class="post__heading">
+                    <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem
+                        ipsum, dolor sit amet consectetur adipisicing elit. Nobis, laboriosam!</a>
+                </div>
+                <div class="post__tag">
+                    <div class="tag__tag">Tag:</div>
+                    <div class="tag__color"></div>
+                </div>
+                <div class="post__info">
+                    <div class="post__time post__info--element">2 hours ago</div>
+                    <div class="post__react post__info--element">15 react</div>
+                </div>
+            </div>
+            <div class="post post--2">
+                <div class="post__author"></div>
+                <div class="post__heading">
+                    <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                        dolor sit amet.</a>
+                </div>
+                <div class="post__tag">
+                    <div class="tag__tag">Tag:</div>
+                    <div class="tag__color"></div>
+                </div>
+                <div class="post__info">
+                    <div class="post__time post__info--element">2 hours ago</div>
+                    <div class="post__react post__info--element">15 react</div>
+                </div>
+            </div>
+            <div class="post post--3">
+                <div class="post__author"></div>
+                <div class="post__heading">
+                    <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                        dolor sit amet.</a>
+                </div>
+                <div class="post__tag">
+                    <div class="tag__tag">Tag:</div>
+                    <div class="tag__color"></div>
+                </div>
+                <div class="post__info">
+                    <div class="post__time post__info--element">2 hours ago</div>
+                    <div class="post__react post__info--element">15 react</div>
+                </div>
+            </div>
+            <div class="post post--4">
+                <div class="post__author"></div>
+                <div class="post__heading">
+                    <a href="##">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, amet. Lorem ipsum
+                        dolor sit amet.</a>
+                </div>
+                <div class="post__tag">
+                    <div class="tag__tag">Tag:</div>
+                    <div class="tag__color"></div>
+                </div>
+                <div class="post__info">
+                    <div class="post__time post__info--element">2 hours ago</div>
+                    <div class="post__react post__info--element">15 react</div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
 
     <section class="topic" style="margin-top: 5rem;">
-        <div class="topic__select"></div>
+        <div class="topic__heading">
+            <a href="##">
+                <span class="heading-secondary">all topic</span>
+            </a>
+        </div>
+        <div class="topic__select">
+            <div class="topic__select--element unselectable" id="topic__select--element6" onclick="topicSelect(6)" style="z-index: 1;">All</div>
+            <div class="topic__select--element unselectable" id="topic__select--element1" onclick="topicSelect(1)">Q&A</div>
+            <div class="topic__select--element unselectable" id="topic__select--element2" onclick="topicSelect(2)">Discussion</div>
+            <div class="topic__select--element unselectable" id="topic__select--element3" onclick="topicSelect(3)">Find Album</div>
+            <div class="topic__select--element unselectable" id="topic__select--element4" onclick="topicSelect(4)">Find Model</div>
+            <div class="topic__select--element unselectable" id="topic__select--element5" onclick="topicSelect(5)">Fun Fact</div>
+        </div>
         <div class="topic__content">
             <div class="topic__sort">
                 Sort by: <div id="sort--select" style="width: fit-content; display: inline-block;">Time</div>
@@ -133,7 +215,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--2">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -144,7 +230,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--3">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -155,7 +245,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--4">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -166,7 +260,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--1">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -177,7 +275,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--3">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -188,9 +290,13 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="item__all unselectable mg-b-2">
-                    <a href="./topic.html">View all &#10143;</a>
+                    <a href="##">View all &#10143;</a>
                 </div>
                 
             </div>
@@ -208,7 +314,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--2">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -219,7 +329,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--3">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -230,7 +344,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--4">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -241,7 +359,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--1">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -252,7 +374,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--3">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -263,9 +389,13 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="item__all unselectable mg-b-2">
-                    <a href="./topic.html">View all &#10143;</a>
+                    <a href="##">View all &#10143;</a>
                 </div>
                 
             </div>
@@ -283,7 +413,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--2">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -294,7 +428,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--3">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -305,7 +443,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--4">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -316,7 +458,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--1">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -327,7 +473,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--3">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -338,9 +488,13 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="item__all unselectable mg-b-2">
-                    <a href="./topic.html">View all &#10143;</a>
+                    <a href="##">View all &#10143;</a>
                 </div>
                 
             </div>
@@ -358,7 +512,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--2">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -369,7 +527,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--3">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -380,7 +542,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--4">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -391,7 +557,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--1">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -402,7 +572,11 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="post post--3">
                     <div class="post__author"></div>
                     <div class="post__heading">
@@ -413,9 +587,13 @@
                         <div class="tag__tag">Tag:</div>
                         <div class="tag__color"></div>
                     </div>
-                </div>
+                    <div class="post__info">
+                        <div class="post__time post__info--element">2 hours ago</div>
+                        <div class="post__react post__info--element">15 react</div>
+                    </div>
+                </div><hr>
                 <div class="item__all unselectable mg-b-2">
-                    <a href="./topic.html">View all &#10143;</a>
+                    <a href="##">View all &#10143;</a>
                 </div>
                 
             </div>
