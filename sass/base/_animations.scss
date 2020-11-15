@@ -89,8 +89,8 @@
     }
 }
 
-//add form w3school.com
-@-webkit-keyframes fade {
+
+@-webkit-keyframes fade { //add form w3school.com
     from {opacity: .4}
     to {opacity: 1}
 }
@@ -112,4 +112,9 @@
     }
     from{display: inline-block;}
     to{display: none;}
+}
+
+@keyframes spin { //add form w3school.com
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

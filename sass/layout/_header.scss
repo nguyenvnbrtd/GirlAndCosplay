@@ -32,6 +32,18 @@
         }
     }
 
+    &--2{
+        background-image: linear-gradient(to right, rgba(117, 117, 117, 0.4), rgba(117, 117, 117, 0.25)), url(../img/bg5.jpg);
+        background-position: left -35rem;
+        margin-bottom: 2.5%;
+    }
+
+    &--3{
+        background-image: linear-gradient(to right, rgba(117, 117, 117, 0.4), rgba(117, 117, 117, 0.25)), url(../img/bg6.jpg);
+        background-position: left -38rem;
+        margin-bottom: 2.5%;
+    }
+
     &__user{
         position: relative;
         height: 3rem;

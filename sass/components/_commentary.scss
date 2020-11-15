@@ -111,6 +111,15 @@
         left: 7rem;
         top: 1rem;
     }
+    &__info{
+        position: absolute;
+        left: 7rem;
+        top: 3rem;
+        & p{
+            border-bottom: 1px solid;
+            width: fit-content;
+        }
+    }
     &--1{
         & .author__avatar{
             background-image: url("../img/author-1.jpg");

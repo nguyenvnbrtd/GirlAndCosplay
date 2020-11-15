@@ -1,0 +1,50 @@
+.topic{
+    position: relative;
+    width: 78%;
+    margin: 0 auto;
+    background-color: $color-white;
+
+    &__title{
+        position: relative;
+        padding: 2rem 0;
+        width: 85%;
+        margin: 0 auto;
+        font-size: 2rem;
+        box-shadow: 0 1px 0 0 #757575;
+        
+    }
+
+    &__info{
+        position: relative;
+        padding: 2rem 0;
+        width: 85%;
+        margin: 0 auto;
+        font-size: 2rem;
+
+        & p{
+            display: inline-block;
+            margin-right: 5rem;
+        }
+        
+    }
+
+    &__author{
+        position: relative;
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        
+    }
+
+    &__content{
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        padding: 5rem;
+    }
+
+    &__commentary{
+        position: relative;
+        
+    }
+}

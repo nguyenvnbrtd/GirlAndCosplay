@@ -261,11 +261,12 @@ body {
       color: #ffffff; }
   .header--2 {
     background-image: linear-gradient(to right, rgba(117, 117, 117, 0.4), rgba(117, 117, 117, 0.25)), url(../img/bg5.jpg);
-    background-position: left -25rem;
-    margin-bottom: 2.5%;
-    height: 50rem; }
-    .header--2 .header__heading {
-      margin-top: 10rem; }
+    background-position: left -35rem;
+    margin-bottom: 2.5%; }
+  .header--3 {
+    background-image: linear-gradient(to right, rgba(117, 117, 117, 0.4), rgba(117, 117, 117, 0.25)), url(../img/bg6.jpg);
+    background-position: left -38rem;
+    margin-bottom: 2.5%; }
   .header__user {
     position: relative;
     height: 3rem;
@@ -1120,6 +1121,13 @@ body {
     position: absolute;
     left: 7rem;
     top: 1rem; }
+  .author__info {
+    position: absolute;
+    left: 7rem;
+    top: 3rem; }
+    .author__info p {
+      border-bottom: 1px solid;
+      width: fit-content; }
   .author--1 .author__avatar {
     background-image: url("../img/author-1.jpg"); }
   .author--2 .author__avatar {
@@ -1193,17 +1201,17 @@ body {
   height: 10rem;
   animation: spin 1.5s linear infinite; }
 
-.topic {
+.forum {
   position: relative; }
-  .topic__heading {
+  .forum__heading {
     position: relative;
     width: 60%;
     margin: 0 auto;
     margin-bottom: 2rem;
     text-transform: uppercase; }
-    .topic__heading span {
+    .forum__heading span {
       background-image: linear-gradient(to right, #0e31bb, #55defb); }
-  .topic__content {
+  .forum__content {
     position: relative;
     width: 60%;
     padding: 5rem;
@@ -1213,14 +1221,14 @@ body {
     border-radius: 3rem;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 1rem #757575; }
-  .topic__select {
+  .forum__select {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 55%;
     margin: 0 auto; }
-    .topic__select--element {
+    .forum__select--element {
       display: inline-block;
       width: 10rem;
       margin: 0 0.5rem;
@@ -1230,11 +1238,11 @@ body {
       background-color: rgba(255, 255, 255, 0.8);
       box-shadow: 0 0 1rem #757575;
       transition: all 0.2s; }
-      .topic__select--element:hover {
+      .forum__select--element:hover {
         transform: scale(1.05, 1.05); }
-      .topic__select--element:active {
+      .forum__select--element:active {
         transform: scale(1, 1); }
-  .topic__sort {
+  .forum__sort {
     position: relative;
     width: 15rem;
     height: 3rem;
@@ -1243,7 +1251,7 @@ body {
     padding: 0 1rem;
     text-align: center;
     border-radius: 2rem; }
-  .topic__author {
+  .forum__author {
     position: relative;
     background-color: #3b5cdd;
     color: #ffffff;
@@ -1251,3 +1259,37 @@ body {
     margin-bottom: 2rem;
     font-size: 3rem;
     font-weight: 700; }
+
+.topic {
+  position: relative;
+  width: 78%;
+  margin: 0 auto;
+  background-color: #ffffff; }
+  .topic__title {
+    position: relative;
+    padding: 2rem 0;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 2rem;
+    box-shadow: 0 1px 0 0 #757575; }
+  .topic__info {
+    position: relative;
+    padding: 2rem 0;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 2rem; }
+    .topic__info p {
+      display: inline-block;
+      margin-right: 5rem; }
+  .topic__author {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 2rem; }
+  .topic__content {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem; }
+  .topic__commentary {
+    position: relative; }

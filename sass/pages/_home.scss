@@ -57,32 +57,4 @@
 
 }
 
-.topic{
-    position: relative;
-
-    &__heading{
-        position: relative;
-        width: 60%;
-        margin: 0 auto;
-        margin-bottom: 2rem;
-        text-transform: uppercase;
-        & span{
-            background-image: linear-gradient(to right, $color-blue-dark, $color-blue-light);
-        }
-    }
-
-    &__content{
-        position: relative;
-        width: 60%;
-        height: 48rem;
-        padding: 5rem;
-        scroll-padding-bottom: 0;
-        margin: 0 auto;
-        margin-bottom: 10rem;
-        border-radius: 3rem;
-        background-color: rgba($color-white, 0.8);
-        box-shadow: 0 0 1rem $color-dark;
-    }
-    
-}
 
