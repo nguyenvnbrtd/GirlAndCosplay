@@ -846,7 +846,7 @@ body {
     clip-path: ellipse(43% 66% at 15% 50%); }
     .login__content :not(:first-of-type) {
       margin-left: 5rem;
-      margin-top: 2rem; }
+      margin-top: 1rem; }
   .login__heading {
     margin-bottom: 4rem;
     margin-left: 5rem;
@@ -1293,3 +1293,20 @@ body {
     padding: 5rem; }
   .topic__commentary {
     position: relative; }
+
+.social_media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.social_media a {
+  display: inline-block;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #ffffff;
+  width: 6rem;
+  height: 6rem;
+  text-align: center;
+  line-height: 6rem;
+  background: linear-gradient(to right, #01a9ac, #01dbdf);
+  border-radius: 5px; }
