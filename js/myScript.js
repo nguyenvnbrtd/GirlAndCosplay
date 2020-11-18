@@ -310,9 +310,9 @@ function loaded_img(){
 }
 
 
-//topic selected
-function topicSelect(n){
-    var id = "topic__select--element"+n;
+//forum selected
+function forumSelect(n){
+    var id = "forum__select--element"+n;
     document.getElementById(id).style.zIndex = "1";
     var tagColors = document.getElementsByClassName("tag__color");
     var color = tag_color1;
@@ -334,10 +334,18 @@ function topicSelect(n){
     }
     
     for(var i = 1; i <= 6; i++){
-        var idd = "topic__select--element"+i;
+        var idd = "forum__select--element"+i;
         if(i!=n){
             document.getElementById(idd).style.zIndex = "0";
         }
 
     }
+}
+
+//show button choose another img
+function showAdd(){
+    document.getElementsByClassName("album__about--add")[0].style.display = "inline";
+}
+function hideAdd(){
+    document.getElementsByClassName("album__about--add")[0].style.display = "none";
 }

@@ -102,6 +102,12 @@ body {
   100% {
     opacity: 1; } }
 
+@keyframes appear-2 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.8; } }
+
 @keyframes click {
   0% {
     opacity: 1; }
@@ -846,7 +852,7 @@ body {
     clip-path: ellipse(43% 66% at 15% 50%); }
     .login__content :not(:first-of-type) {
       margin-left: 5rem;
-      margin-top: 1rem; }
+      margin-top: 2rem; }
   .login__heading {
     margin-bottom: 4rem;
     margin-left: 5rem;
@@ -1294,19 +1300,87 @@ body {
   .topic__commentary {
     position: relative; }
 
-.social_media {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+.new-album {
+  position: relative;
+  width: 60%;
+  height: 50rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 1rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  padding: 5rem; }
 
-.social_media a {
-  display: inline-block;
-  font-size: 2rem;
-  text-decoration: none;
-  color: #ffffff;
-  width: 6rem;
-  height: 6rem;
-  text-align: center;
-  line-height: 6rem;
-  background: linear-gradient(to right, #01a9ac, #01dbdf);
-  border-radius: 5px; }
+.new-image {
+  position: relative;
+  width: 60%;
+  background-color: #ffffff;
+  box-shadow: 0 0 1rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  padding: 5rem;
+  text-align: center; }
+  .new-image__element {
+    display: inline-block;
+    max-width: 20rem;
+    max-height: 20rem; }
+    .new-image__element img {
+      width: 100%;
+      height: 100%; }
+  .new-image .submit a {
+    display: inline-block;
+    text-decoration: none;
+    width: 10rem;
+    height: 4rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    background-color: #55defb;
+    line-height: 4rem;
+    color: white;
+    cursor: pointer; }
+
+.album {
+  position: relative; }
+  .album__about {
+    position: relative;
+    max-width: 30rem;
+    max-height: 50rem;
+    display: inline-block;
+    overflow: hidden; }
+    .album__about--add {
+      display: none;
+      height: auto !important;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      opacity: 0.8;
+      animation: appear-2 0.5s;
+      border: 1rem solid #ffffff;
+      border-radius: 2rem;
+      transition: all 0.5s;
+      cursor: pointer; }
+    .album__about img {
+      width: 100%;
+      height: 100%; }
+  .album__description {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 30rem;
+    height: auto;
+    padding: 2rem; }
+    .album__description--element {
+      position: relative;
+      height: 9rem;
+      font-size: 2rem;
+      text-align: left;
+      flex-flow: wrap; }
+    .album__description .text-input {
+      left: auto;
+      top: auto;
+      background-color: transparent;
+      width: auto;
+      max-height: 6rem;
+      overflow: auto; }

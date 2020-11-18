@@ -16,7 +16,7 @@
 @import './components/menu';
 @import './components/unselectable';
 @import './pages/login';
-@import './pages/album';
+@import './pages/albums';
 @import './pages/watch';
 @import './components/pic';
 @import './components/option';
@@ -26,4 +26,6 @@
 @import './components/text-input';
 @import './components/loader';
 @import './pages/forum';
-@import './pages/topic';
+@import './pages/topic'; 
+@import './pages/new-album';
+@import './components/album';

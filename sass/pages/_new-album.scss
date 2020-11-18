@@ -1,0 +1,53 @@
+.new-album{
+    position: relative;
+    width: 60%;
+    height: 50rem;
+    background-color: $color-white;
+    box-shadow: 0 0 1rem;
+    margin: 0 auto;
+    margin-top: 10rem;
+    padding: 5rem;
+
+}
+
+.new-image{
+    position: relative;
+    width: 60%;
+    background-color: $color-white;
+    box-shadow: 0 0 1rem;
+    margin: 0 auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    padding: 5rem;
+    text-align: center;
+
+    &__element{
+        display: inline-block;
+        max-width: 20rem;
+        max-height: 20rem;
+
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    & .submit{
+
+        & a{
+            display: inline-block;
+            text-decoration: none;
+            width: 10rem;
+            height: 4rem;
+            margin: 0 auto;
+            margin-top: 3rem;
+            border-radius: 1rem;
+            background-color: #55defb;
+            line-height: 4rem;
+            color: white;
+            cursor: pointer;
+        }
+        
+    }
+
+}
