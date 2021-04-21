@@ -1,0 +1,8 @@
+{
+  "people" : {
+    "name" : "Nhí",
+    "age" : 20,
+    "job" : "student",
+    "certificate" : ["A", "B", "C"]
+  }
+}
